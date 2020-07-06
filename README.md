@@ -17,7 +17,7 @@ Containers created and their ports (if used) are as follows:
 
 `
 nginx - :8088
-mysql - :3306
+mysql - :4306
 php - :9000
 npm
 composer
