@@ -33,5 +33,5 @@ volumes:
 
 # Comando adicionales:
 - docker-compose -f docker-compose.prod.yml up -d --build  //ejecutamos docker-compose production
-- docker-compose exec php php artisan migrate  // Ejecutamos la migracion
 - docker-compose run --rm artisan(composer, npm) comando // ejecuta composer, npm, artisan dentro del contenedor
+- docker-compose exec {container_name} /bin/sh
