@@ -8,21 +8,19 @@ Primero agregue todo su proyecto Laravel a la carpeta src, luego abra una termin
 
 Nuevo: Se han agregado tres nuevos contenedores que manejan los comandos Composer, NPM y Artisan sin tener que tener estas plataformas instaladas en su computadora local. Use las siguientes plantillas de comando de la raíz de su proyecto, modificándolas para que se ajusten a su caso de uso particular:
 
-`
-docker-compose run --rm composer update
-docker-compose run --rm npm run dev
-docker-compose run --rm artisan migrate
-`
+`docker-compose run --rm composer update`
+`docker-compose run --rm npm run dev`
+`docker-compose run --rm artisan migrate`
+
 Containers created and their ports (if used) are as follows:
 
-`
-nginx - :8088
-mysql - :4306
-php - :9000
-npm
-composer
-artisan
-`
+`nginx - :8088`
+`mysql - :4306`
+`php - :9000`
+`npm`
+`composer`
+`artisan`
+
 # Persistent MySQL Storage
 Por defecto, cada vez que derribe la red de compilación acoplable, sus datos MySQL se eliminarán después de que se destruyan los contenedores. Si desea tener datos persistentes que permanecen después de bajar y volver a colocar los contenedores, haga lo siguiente:
 
